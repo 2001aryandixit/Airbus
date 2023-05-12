@@ -17,7 +17,7 @@ public class Aircraft {
     private String manufacturer;
     private String potential_use_cases;
     private int age_years;
-    private String condition;
+    private String conditions;
     private String location;
 	public Long getAircraft_id() {
 		return aircraft_id;
@@ -61,11 +61,11 @@ public class Aircraft {
 	public void setAge_years(int age_years) {
 		this.age_years = age_years;
 	}
-	public String getCondition() {
-		return condition;
+	public String getconditions() {
+		return conditions;
 	}
-	public void setCondition(String condition) {
-		this.condition = condition;
+	public void setconditions(String conditions) {
+		this.conditions = conditions;
 	}
 	public String getLocation() {
 		return location;
@@ -74,7 +74,7 @@ public class Aircraft {
 		this.location = location;
 	}
 	public Aircraft(Long aircraft_id, String part_name, String material_composition, String aircraft_model,
-			String manufacturer, String potential_use_cases, int age_years, String condition, String location) {
+			String manufacturer, String potential_use_cases, int age_years, String conditions, String location) {
 		super();
 		this.aircraft_id = aircraft_id;
 		this.part_name = part_name;
@@ -83,7 +83,7 @@ public class Aircraft {
 		this.manufacturer = manufacturer;
 		this.potential_use_cases = potential_use_cases;
 		this.age_years = age_years;
-		this.condition = condition;
+		this.conditions = conditions;
 		this.location = location;
 	}
 	public Aircraft() {

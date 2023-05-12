@@ -37,7 +37,7 @@ public class AirbusService {
             aircraft.setPart_name(line[0]);
             aircraft.setMaterial_composition(line[1]);
             aircraft.setAge_years(Integer.parseInt(line[2]));
-            aircraft.setCondition(line[3]);
+            aircraft.setconditions(filePath);
             aircraft.setLocation(line[4]);
             aircraft.setManufacturer(line[5]);
             aircraft.setAircraft_model(line[6]);
