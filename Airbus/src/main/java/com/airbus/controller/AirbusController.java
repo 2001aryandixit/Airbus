@@ -20,7 +20,7 @@ public class AirbusController {
     private AirbusService airbusService;
 
     @PostMapping("/import")
-    public String importData(@RequestParam("file") MultipartFile file) throws CsvValidationException {
+    public String importData(@RequestParam("Dataset") MultipartFile file) throws CsvValidationException {
         try {
             // Save the uploaded file temporarily
             Path tempFilePath = Files.createTempFile("temp", file.getOriginalFilename());
